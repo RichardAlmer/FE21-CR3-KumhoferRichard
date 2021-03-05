@@ -1,0 +1,193 @@
+/* Stylesheet for Ratings */
+/* colors and font-families */
+/* Media Queries */
+/* Stylesheet for the Cards */
+/* colors and font-families */
+.myCard {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 20vw;
+  background-color: #cecece;
+  border-radius: 2rem;
+  -webkit-box-shadow: 3px 3px 5px white;
+          box-shadow: 3px 3px 5px white;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .myCard {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .myCard {
+    width: 50vw;
+  }
+}
+
+.myCard .myCardBody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4rem 7rem 3rem;
+      grid-template-rows: 4rem 7rem 3rem;
+}
+
+.myCard .myCardBodyB {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4rem 3rem 7rem;
+      grid-template-rows: 4rem 3rem 7rem;
+}
+
+.myCard h5 {
+  text-align: center;
+  font-size: 1.7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 0.5rem;
+  width: 19vw;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .myCard h5 {
+    width: 29vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .myCard h5 {
+    width: 49vw;
+  }
+}
+
+.myCard p {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  width: 19vw;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .myCard p {
+    width: 29vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .myCard p {
+    width: 49vw;
+  }
+}
+
+.myCard b {
+  font-size: 1.2rem;
+}
+
+.myCard .price {
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding-bottom: 0.5rem;
+}
+
+.myCard .priceB {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding-bottom: 0.5rem;
+}
+
+.cardImg {
+  width: 20vw;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .cardImg {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardImg {
+    width: 50vw;
+  }
+}
+
+#main {
+  background-color: #6e6e6e;
+  padding: 0 5vw;
+}
+
+#main h1 {
+  font-size: 4rem;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  text-align: center;
+  margin: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+#main .rating {
+  text-align: center;
+  margin: 2rem 0;
+  border-top: 1px solid black;
+  padding-top: 2rem;
+}
+
+#main .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#main .stars {
+  color: gold;
+  font-size: 2rem;
+}
+
+#main .text {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+#main #newRating {
+  text-align: center;
+  margin: 2rem 0;
+  border-top: 1px solid black;
+  padding-top: 4rem;
+}
+
+#main #please {
+  font-size: 1.5rem;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  padding-bottom: 1rem;
+}
+
+#main #newStars {
+  color: gold;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+#main #newName {
+  margin-bottom: 0.5rem;
+}
+
+#main #newText {
+  width: 50vw;
+}
+
+#main #button {
+  width: 4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+}
+/*# sourceMappingURL=ratings.css.map */

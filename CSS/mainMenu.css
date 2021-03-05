@@ -1,0 +1,355 @@
+/* Stylesheet for Menu */
+/* colors and font-families */
+/* Media Queries */
+/* Stylesheet for the Cards */
+/* colors and font-families */
+.myCard {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 20vw;
+  background-color: #cecece;
+  border-radius: 2rem;
+  -webkit-box-shadow: 3px 3px 5px white;
+          box-shadow: 3px 3px 5px white;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .myCard {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .myCard {
+    width: 50vw;
+  }
+}
+
+.myCard .myCardBody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4rem 7rem 3rem;
+      grid-template-rows: 4rem 7rem 3rem;
+}
+
+.myCard .myCardBodyB {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4rem 3rem 7rem;
+      grid-template-rows: 4rem 3rem 7rem;
+}
+
+.myCard h5 {
+  text-align: center;
+  font-size: 1.7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 0.5rem;
+  width: 19vw;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .myCard h5 {
+    width: 29vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .myCard h5 {
+    width: 49vw;
+  }
+}
+
+.myCard p {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  width: 19vw;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .myCard p {
+    width: 29vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .myCard p {
+    width: 49vw;
+  }
+}
+
+.myCard b {
+  font-size: 1.2rem;
+}
+
+.myCard .price {
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding-bottom: 0.5rem;
+}
+
+.myCard .priceB {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding-bottom: 0.5rem;
+}
+
+.cardImg {
+  width: 20vw;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .cardImg {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardImg {
+    width: 50vw;
+  }
+}
+
+#main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15rem 6rem 40rem 6rem 40rem 40rem 6rem 40rem 6rem 40rem;
+      grid-template-rows: 15rem 6rem 40rem 6rem 40rem 40rem 6rem 40rem 6rem 40rem;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "menu menu menu menu" "starters starters starters starters" "st1 st2 st3 st4" "MC MC MC MC" "MC1 MC2 MC3 MC4" "MC5 MC6 MC7 MC8" "desserts desserts desserts desserts" "D1 D2 D3 D4" "beverages beverages beverages beverages" "B1 B2 B3 B4";
+  background-color: #6e6e6e;
+  padding: 0 5vw;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main {
+    -ms-grid-rows: 15rem 6rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 6rem 40rem 40rem;
+        grid-template-rows: 15rem 6rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 6rem 40rem 40rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "menu menu" "starters starters" "st1 st3" "st2 st4" "MC MC" "MC1 MC3" "MC2 MC4" "MC5 MC7" "MC6 MC8" "desserts desserts" "D1 D3" "D2 D4" "beverages beverages" "B1 B3" "B2 B4";
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #main {
+    -ms-grid-rows: 15rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem;
+        grid-template-rows: 15rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "menu" "starters" "st1" "st3" "st2" "st4" "MC" "MC1" "MC3" "MC2" "MC4" "MC5" "MC7" "MC6" "MC8" "desserts" "D1" "D3" "D2" "D4" "beverages" "B1" "B3" "B2" "B4";
+  }
+}
+
+#main #menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: menu;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  font-size: 4rem;
+  text-shadow: 3px 3px 5px #c4c4c4;
+}
+
+#main #starters {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: starters;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px #c4c4c4;
+}
+
+#main #st1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: st1;
+}
+
+#main #st2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: st2;
+}
+
+#main #st3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: st3;
+}
+
+#main #st4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: st4;
+}
+
+#main #MC {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: MC;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px #c4c4c4;
+  padding-top: 1rem;
+}
+
+#main #MC1 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: MC1;
+}
+
+#main #MC2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: MC2;
+}
+
+#main #MC3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: MC3;
+}
+
+#main #MC4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: MC4;
+}
+
+#main #MC5 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: MC5;
+}
+
+#main #MC6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: MC6;
+}
+
+#main #MC7 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: MC7;
+}
+
+#main #MC8 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: MC8;
+}
+
+#main #desserts {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: desserts;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px #c4c4c4;
+  padding-top: 1rem;
+}
+
+#main #D1 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: D1;
+}
+
+#main #D2 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  grid-area: D2;
+}
+
+#main #D3 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 3;
+  grid-area: D3;
+}
+
+#main #D4 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 4;
+  grid-area: D4;
+}
+
+#main #beverages {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: beverages;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px #c4c4c4;
+  padding-top: 1rem;
+}
+
+#main #B1 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: B1;
+}
+
+#main #B2 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 2;
+  grid-area: B2;
+}
+
+#main #B3 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 3;
+  grid-area: B3;
+}
+
+#main #B4 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 4;
+  grid-area: B4;
+}
+/*# sourceMappingURL=mainMenu.css.map */

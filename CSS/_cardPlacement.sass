@@ -1,0 +1,66 @@
+/* Stylesheet for the Cards */
+
+@import colorfont
+
+.myCard
+    justify-self: center
+    align-self: center
+    width: 20vw
+    background-color: #cecece
+    border-radius: 2rem
+    box-shadow: 3px 3px 5px $third
+    @include tablet
+        width: 27vw
+    @include phone
+        width: 47vw
+
+    .myCardBody
+        display: grid
+        grid-template-rows: 4rem 7rem 3rem
+
+    .myCardBodyB
+        display: grid
+        grid-template-rows: 4rem 3rem 7rem
+
+    h5
+        text-align: center
+        font-size: 1.7rem
+        align-self: center
+        padding: 0 0.5rem
+        width: 19vw
+        @include tablet
+            width: 26vw
+        @include phone
+            width: 46vw
+
+    p
+        text-align: center
+        align-self: center
+        font-size: 1.2rem
+        padding: 0 0.5rem
+        width: 19vw
+        @include tablet
+            width: 26vw
+        @include phone
+            width: 46vw
+    
+    b
+        font-size: 1.2rem
+
+    .price
+        font-weight: bold
+        align-self: end
+        padding-bottom: 0.5rem
+
+    .priceB
+        align-self: end
+        padding-bottom: 0.5rem
+
+.cardImg
+    width: 20vw
+    border-top-left-radius: 2rem
+    border-top-right-radius: 2rem
+    @include tablet
+        width: 27vw
+    @include phone
+        width: 47vw
