@@ -38,17 +38,17 @@ const soft = 5.4;      // 0.5l Softdrink
 
 function calculateInvoice(starterPrice, maindishPrice, dessertPrice, beveragePrice) {
 
-    return Math.round((starterPrice + maindishPrice + dessertPrice + beveragePrice) * 100) / 100
+    return Math.round((starterPrice + maindishPrice + dessertPrice + beveragePrice) * 100) / 100    // auf 2 Nachkommastellen geundet wegen ungenauigkeit von 0,00000000000002
 
 }
 
-console.log(`Caesar-Salad Roastbeef:\t€ ${cSalad}\nMilwaukee-Burger:\t\t€ ${mBburger}\nWaffle variations:\t\t€ ${waffle}\n0.5l Beer:\t\t\t\t€ ${beer}`);
+console.log(`\nCaesar-Salad Roastbeef:\t€ ${cSalad}\nMilwaukee-Burger:\t\t€ ${mBburger}\nWaffle variations:\t\t€ ${waffle}\n0.5l Beer:\t\t\t\t€ ${beer}`);
 console.log("Total: \t\t\t\t\t€ " + calculateInvoice(cSalad, mBburger, waffle, beer));
 
-console.log(`Mexican Bean Soup:\t\t\t€ ${cSoup}\nCheese and Bacon-Burger:\t€ ${bBurger}\nChocolate brownie:\t\t\t€ ${cBrownie}\n1/4l Wine:\t\t\t\t\t€ ${wine}`);
+console.log(`\nMexican Bean Soup:\t\t\t€ ${cSoup}\nCheese and Bacon-Burger:\t€ ${bBurger}\nChocolate brownie:\t\t\t€ ${cBrownie}\n1/4l Wine:\t\t\t\t\t€ ${wine}`);
 console.log("Total: \t\t\t\t\t\t€ " + calculateInvoice(cSoup, bBurger, cBrownie, wine));
 
-console.log(`Onionsoup:\t\t\t\t€ ${oSoup}\nPulled Pork-Burger:\t\t€ ${pBurger}\nPancakes variations:\t€ ${pancakes}\n0.5l Softdrink:\t\t\t€ ${soft}`);
+console.log(`\nOnionsoup:\t\t\t\t€ ${oSoup}\nPulled Pork-Burger:\t\t€ ${pBurger}\nPancakes variations:\t€ ${pancakes}\n0.5l Softdrink:\t\t\t€ ${soft}`);
 console.log("Total: \t\t\t\t\t€ " + calculateInvoice(oSoup, pBurger, pancakes, soft));
 
 
@@ -57,17 +57,17 @@ console.log("Total: \t\t\t\t\t€ " + calculateInvoice(oSoup, pBurger, pancakes,
 function studentInvoice(starterPrice, maindishPrice, dessertPrice, beveragePrice) {
 
     let tenPercent = (starterPrice + maindishPrice + dessertPrice) / 10 
-    let total = Math.round((starterPrice + maindishPrice + dessertPrice + beveragePrice - tenPercent) * 100) / 100
+    let total = Math.round((starterPrice + maindishPrice + dessertPrice + beveragePrice - tenPercent) * 100) / 100  // auf 2 Nachkommastellen geundet wegen ungenauigkeit von 0,00000000000002
     
     return [tenPercent, total]
 
 }
 
-console.log(`Curry-Corn Soup:\t\t€ ${bSoup}\nHot Chili-Burger:\t\t€ ${cBurger}\nAmerican Apple Pie:\t\t€ ${aPie}\n0.5l Beer:\t\t\t\t€ ${beer}\n10% Discount for Food:\t€ ${studentInvoice(bSoup, cBurger, aPie, beer)[0]}`);
+console.log(`\nCurry-Corn Soup:\t\t€ ${bSoup}\nHot Chili-Burger:\t\t€ ${cBurger}\nAmerican Apple Pie:\t\t€ ${aPie}\n0.5l Beer:\t\t\t\t€ ${beer}\n10% Discount for Food:\t€-${studentInvoice(bSoup, cBurger, aPie, beer)[0]}`);
 console.log("Total: \t\t\t\t\t€ " + studentInvoice(bSoup, cBurger, aPie, beer)[1]);
 
-console.log(`Mexican Bean Soup:\t\t\t€ ${cSoup}\nSurf & Turf:\t\t\t\t€ ${sNt}\nChocolate brownie:\t\t\t€ ${cBrownie}\n2cl Schnapps:\t\t\t\t€ ${sSchnapps}\n10% Discount for Food:\t\t€ ${studentInvoice(cSoup, bBurger, cBrownie, wine)[0]}`);
+console.log(`\nMexican Bean Soup:\t\t\t€ ${cSoup}\nSurf & Turf:\t\t\t\t€ ${sNt}\nChocolate brownie:\t\t\t€ ${cBrownie}\n2cl Schnapps:\t\t\t\t€ ${sSchnapps}\n10% Discount for Food:\t\t€-${studentInvoice(cSoup, sNt, cBrownie, sSchnapps)[0]}`);
 console.log("Total: \t\t\t\t\t\t€ " + studentInvoice(cSoup, sNt, cBrownie, sSchnapps)[1]);
 
-console.log(`Onionsoup:\t\t\t\t€ ${oSoup}\nBison-Steak 220g:\t\t€ ${bSteak}\nPancakes variations:\t€ ${pancakes}\n0.5l Softdrink:\t\t\t€ ${soft}\n10% Discount for Food:\t€ ${studentInvoice(oSoup, pBurger, pancakes, soft)[0]}`);
+console.log(`\nOnionsoup:\t\t\t\t€ ${oSoup}\nBison-Steak 220g:\t\t€ ${bSteak}\nPancakes variations:\t€ ${pancakes}\n0.5l Softdrink:\t\t\t€ ${soft}\n10% Discount for Food:\t€-${studentInvoice(oSoup, bSteak, pancakes, soft)[0]}`);
 console.log("Total: \t\t\t\t\t€ " + studentInvoice(oSoup, bSteak, pancakes, soft)[1]);
