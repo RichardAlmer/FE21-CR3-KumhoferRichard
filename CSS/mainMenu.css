@@ -9,88 +9,50 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 20vw;
+  width: 25em;
   background-color: #cecece;
   border-radius: 2rem;
   -webkit-box-shadow: 3px 3px 5px white;
           box-shadow: 3px 3px 5px white;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
-  .myCard {
-    width: 30vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .myCard {
-    width: 50vw;
-  }
+.myCard .cardImg {
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 .myCard .myCardBody {
+  width: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 4rem 7rem 3rem;
       grid-template-rows: 4rem 7rem 3rem;
 }
 
-.myCard .myCardBodyB {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 4rem 3rem 7rem;
-      grid-template-rows: 4rem 3rem 7rem;
-}
-
-.myCard h5 {
+.myCard .myCardBody h5 {
   text-align: center;
   font-size: 1.7rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   padding: 0 0.5rem;
-  width: 19vw;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
-  .myCard h5 {
-    width: 29vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .myCard h5 {
-    width: 49vw;
-  }
-}
-
-.myCard p {
+.myCard .myCardBody p {
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 1.2rem;
   padding: 0 0.5rem;
-  width: 19vw;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
-  .myCard p {
-    width: 29vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .myCard p {
-    width: 49vw;
-  }
-}
-
-.myCard b {
+.myCard .myCardBody b {
   font-size: 1.2rem;
 }
 
-.myCard .price {
+.myCard .myCardBody .price {
   font-weight: bold;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
@@ -98,67 +60,72 @@
   padding-bottom: 0.5rem;
 }
 
-.myCard .priceB {
+.myCard .myCardBodyB {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4rem 3rem 7rem;
+      grid-template-rows: 4rem 3rem 7rem;
+}
+
+.myCard .myCardBodyB h5 {
+  text-align: center;
+  font-size: 1.7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 0.5rem;
+}
+
+.myCard .myCardBodyB p {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+.myCard .myCardBodyB b {
+  font-size: 1.2rem;
+}
+
+.myCard .myCardBodyB .priceB {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
   padding-bottom: 0.5rem;
 }
 
-.cardImg {
-  width: 20vw;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-}
-
-@media screen and (min-width: 481px) and (max-width: 800px) {
-  .cardImg {
-    width: 30vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .cardImg {
-    width: 50vw;
-  }
-}
-
 #main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 15rem 6rem 40rem 6rem 40rem 40rem 6rem 40rem 6rem 40rem;
-      grid-template-rows: 15rem 6rem 40rem 6rem 40rem 40rem 6rem 40rem 6rem 40rem;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "menu menu menu menu" "starters starters starters starters" "st1 st2 st3 st4" "MC MC MC MC" "MC1 MC2 MC3 MC4" "MC5 MC6 MC7 MC8" "desserts desserts desserts desserts" "D1 D2 D3 D4" "beverages beverages beverages beverages" "B1 B2 B3 B4";
+  -ms-grid-rows: 15rem 6rem 45rem 6rem 85rem 6rem 45rem 6rem 45rem;
+      grid-template-rows: 15rem 6rem 45rem 6rem 85rem 6rem 45rem 6rem 45rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "menu" "starters" "starterDiv" "MC" "MCDiv" "desserts" "dessertDiv" "beverages" "bevDiv";
   background-color: #6e6e6e;
   padding: 0 5vw;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 555px) and (max-width: 1110px) {
   #main {
-    -ms-grid-rows: 15rem 6rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 6rem 40rem 40rem;
-        grid-template-rows: 15rem 6rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 6rem 40rem 40rem;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "menu menu" "starters starters" "st1 st3" "st2 st4" "MC MC" "MC1 MC3" "MC2 MC4" "MC5 MC7" "MC6 MC8" "desserts desserts" "D1 D3" "D2 D4" "beverages beverages" "B1 B3" "B2 B4";
+    -ms-grid-rows: 15rem 6rem 90rem 6rem 170rem 6rem 90rem 6rem 90rem;
+        grid-template-rows: 15rem 6rem 90rem 6rem 170rem 6rem 90rem 6rem 90rem;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 554px) {
   #main {
-    -ms-grid-rows: 15rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem;
-        grid-template-rows: 15rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "menu" "starters" "st1" "st3" "st2" "st4" "MC" "MC1" "MC3" "MC2" "MC4" "MC5" "MC7" "MC6" "MC8" "desserts" "D1" "D3" "D2" "D4" "beverages" "B1" "B3" "B2" "B4";
+    -ms-grid-rows: 15rem 6rem 180rem 6rem 340rem 6rem 180rem 6rem 180rem;
+        grid-template-rows: 15rem 6rem 180rem 6rem 340rem 6rem 180rem 6rem 180rem;
   }
 }
 
 #main #menu {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: menu;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -173,7 +140,6 @@
 #main #starters {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: starters;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -185,34 +151,22 @@
   text-shadow: 3px 3px 5px #c4c4c4;
 }
 
-#main #st1 {
+#main #starterDiv {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: st1;
-}
-
-#main #st2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: st2;
-}
-
-#main #st3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: st3;
-}
-
-#main #st4 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
-  grid-area: st4;
+  grid-area: starterDiv;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #main #MC {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: MC;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -225,58 +179,22 @@
   padding-top: 1rem;
 }
 
-#main #MC1 {
+#main #MCDiv {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
-  grid-area: MC1;
-}
-
-#main #MC2 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: MC2;
-}
-
-#main #MC3 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-  grid-area: MC3;
-}
-
-#main #MC4 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 4;
-  grid-area: MC4;
-}
-
-#main #MC5 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: MC5;
-}
-
-#main #MC6 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-  grid-area: MC6;
-}
-
-#main #MC7 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 3;
-  grid-area: MC7;
-}
-
-#main #MC8 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 4;
-  grid-area: MC8;
+  grid-area: MCDiv;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #main #desserts {
-  -ms-grid-row: 7;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: desserts;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -289,34 +207,22 @@
   padding-top: 1rem;
 }
 
-#main #D1 {
-  -ms-grid-row: 8;
+#main #dessertDiv {
+  -ms-grid-row: 7;
   -ms-grid-column: 1;
-  grid-area: D1;
-}
-
-#main #D2 {
-  -ms-grid-row: 8;
-  -ms-grid-column: 2;
-  grid-area: D2;
-}
-
-#main #D3 {
-  -ms-grid-row: 8;
-  -ms-grid-column: 3;
-  grid-area: D3;
-}
-
-#main #D4 {
-  -ms-grid-row: 8;
-  -ms-grid-column: 4;
-  grid-area: D4;
+  grid-area: dessertDiv;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #main #beverages {
-  -ms-grid-row: 9;
+  -ms-grid-row: 8;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: beverages;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -329,27 +235,16 @@
   padding-top: 1rem;
 }
 
-#main #B1 {
-  -ms-grid-row: 10;
+#main #bevDiv {
+  -ms-grid-row: 9;
   -ms-grid-column: 1;
-  grid-area: B1;
-}
-
-#main #B2 {
-  -ms-grid-row: 10;
-  -ms-grid-column: 2;
-  grid-area: B2;
-}
-
-#main #B3 {
-  -ms-grid-row: 10;
-  -ms-grid-column: 3;
-  grid-area: B3;
-}
-
-#main #B4 {
-  -ms-grid-row: 10;
-  -ms-grid-column: 4;
-  grid-area: B4;
+  grid-area: bevDiv;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=mainMenu.css.map */

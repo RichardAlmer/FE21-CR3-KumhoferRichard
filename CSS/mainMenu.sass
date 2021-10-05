@@ -7,19 +7,16 @@
 
 #main
     display: grid
-    grid-template-rows: 15rem 6rem 40rem 6rem 40rem 40rem 6rem 40rem 6rem 40rem
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    grid-template-areas: "menu menu menu menu" "starters starters starters starters" "st1 st2 st3 st4" "MC MC MC MC" "MC1 MC2 MC3 MC4" "MC5 MC6 MC7 MC8" "desserts desserts desserts desserts" "D1 D2 D3 D4" "beverages beverages beverages beverages" "B1 B2 B3 B4"
+    grid-template-rows: 15rem 6rem 45rem 6rem 85rem 6rem 45rem 6rem 45rem
+    grid-template-columns: 1fr
+    grid-template-areas: "menu" "starters" "starterDiv" "MC" "MCDiv" "desserts" "dessertDiv" "beverages" "bevDiv"
     background-color: $secondary
     padding: 0 5vw
     @include tablet
-        grid-template-rows: 15rem 6rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 6rem 40rem 40rem
-        grid-template-columns: 1fr 1fr
-        grid-template-areas: "menu menu" "starters starters" "st1 st3" "st2 st4" "MC MC" "MC1 MC3" "MC2 MC4" "MC5 MC7" "MC6 MC8" "desserts desserts" "D1 D3" "D2 D4" "beverages beverages" "B1 B3" "B2 B4"
+        grid-template-rows: 15rem 6rem 90rem 6rem 170rem 6rem 90rem 6rem 90rem
+        
     @include phone
-        grid-template-rows: 15rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem 6rem 40rem 40rem 40rem 40rem
-        grid-template-columns: 1fr
-        grid-template-areas: "menu" "starters" "st1" "st3" "st2" "st4" "MC" "MC1" "MC3" "MC2" "MC4" "MC5" "MC7" "MC6" "MC8" "desserts" "D1" "D3" "D2" "D4" "beverages" "B1" "B3" "B2" "B4"
+        grid-template-rows: 15rem 6rem 180rem 6rem 340rem 6rem 180rem 6rem 180rem
     
     #menu
         grid-area: menu
@@ -37,17 +34,11 @@
         font-size: 3rem
         text-shadow: 3px 3px 5px #c4c4c4
 
-    #st1
-        grid-area: st1
-
-    #st2
-        grid-area: st2
-
-    #st3
-        grid-area: st3
-
-    #st4
-        grid-area: st4
+    #starterDiv
+        grid-area: starterDiv
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
 
     #MC
         grid-area: MC
@@ -58,29 +49,12 @@
         text-shadow: 3px 3px 5px #c4c4c4
         padding-top: 1rem
 
-    #MC1
-        grid-area: MC1
-    
-    #MC2
-        grid-area: MC2
-
-    #MC3
-        grid-area: MC3
-    
-    #MC4
-        grid-area: MC4
-
-    #MC5
-        grid-area: MC5
-
-    #MC6
-        grid-area: MC6
-
-    #MC7
-        grid-area: MC7
-
-    #MC8
-        grid-area: MC8
+    #MCDiv
+        grid-area: MCDiv
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        
 
     #desserts
         grid-area: desserts
@@ -91,17 +65,11 @@
         text-shadow: 3px 3px 5px #c4c4c4
         padding-top: 1rem
 
-    #D1
-        grid-area: D1
-
-    #D2
-        grid-area: D2
-
-    #D3
-        grid-area: D3
-
-    #D4
-        grid-area: D4
+    #dessertDiv
+        grid-area: dessertDiv
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
 
     #beverages
         grid-area: beverages
@@ -112,14 +80,8 @@
         text-shadow: 3px 3px 5px #c4c4c4
         padding-top: 1rem
 
-    #B1
-        grid-area: B1
-
-    #B2
-        grid-area: B2
-
-    #B3
-        grid-area: B3
-
-    #B4
-        grid-area: B4
+    #bevDiv
+        grid-area: bevDiv
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap

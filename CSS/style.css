@@ -36,7 +36,7 @@
   /* Style for Navbar in Header */
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 555px) and (max-width: 1110px) {
   #container #header {
     -ms-grid-rows: 12rem 6rem;
         grid-template-rows: 12rem 6rem;
@@ -46,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 554px) {
   #container #header {
     -ms-grid-rows: 12rem 6rem;
         grid-template-rows: 12rem 6rem;
@@ -72,7 +72,7 @@
   text-shadow: 3px 3px 5px #f6d1b2;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 554px) {
   #container #header h1 {
     display: none;
   }
@@ -83,13 +83,13 @@
   margin-left: 5vw;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 555px) and (max-width: 1110px) {
   #container #header #hImg1 {
     display: none;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 554px) {
   #container #header #hImg1 {
     margin-left: 0;
   }
@@ -100,13 +100,13 @@
   margin-right: 5vw;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 555px) and (max-width: 1110px) {
   #container #header #hImg2 {
     display: none;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 554px) {
   #container #header #hImg2 {
     display: none;
   }
@@ -124,7 +124,7 @@
       align-self: center;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 555px) and (max-width: 1110px) {
   #container #header #hA1 {
     display: none;
   }
@@ -142,13 +142,13 @@
       align-self: center;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 555px) and (max-width: 1110px) {
   #container #header #hA2 {
     display: none;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 554px) {
   #container #header #hA2 {
     display: none;
   }
@@ -204,7 +204,7 @@
   /* Style for Navbar in Footer */
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 555px) and (max-width: 1110px) {
   #container #footer {
     -ms-grid-rows: 3rem 6rem 3rem;
         grid-template-rows: 3rem 6rem 3rem;
@@ -214,7 +214,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 554px) {
   #container #footer {
     -ms-grid-rows: 3rem 6rem 3rem;
         grid-template-rows: 3rem 6rem 3rem;
@@ -238,7 +238,7 @@
   width: 6rem;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 555px) and (max-width: 1110px) {
   #container #footer img {
     -ms-grid-column-align: center;
         justify-self: center;
@@ -249,7 +249,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 554px) {
   #container #footer img {
     -ms-grid-column-align: center;
         justify-self: center;
@@ -286,7 +286,7 @@
   margin-left: 4rem;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 555px) and (max-width: 1110px) {
   #container #footer nav {
     -ms-grid-column-align: center;
         justify-self: center;
@@ -297,7 +297,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 554px) {
   #container #footer nav {
     -ms-grid-column-align: center;
         justify-self: center;
